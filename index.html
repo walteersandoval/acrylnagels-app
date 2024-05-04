@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <title>Platzi Expert</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+   
+    <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+
+    <style>
+      body, html {
+          margin: 0;
+          padding: 0;
+      }
+
+      .navbar-top {
+          padding: 8px;
+      }
+
+      .navbar-bottom {
+          padding-bottom: 26px;
+      }
+
+      .top-spacing {
+          padding-top: 56px;
+          height: 56px; /* Consolidado desde dos clases separadas */
+      }
+
+      .navbar-logo {
+          min-width: -7%;
+          height: auto;
+          width: 53px;
+          border-radius: 100px;
+      }
+
+      .navbar-text {
+          font-size: 11px;
+          padding-top: .5rem;
+          padding-bottom: .5rem;
+          color: rgb(69, 64, 71);
+          transition: color 0.3s ease; /* Suaviza la transición de color */
+      }
+
+      .navbar-text:hover {
+          color: #c188cf;
+      }
+
+      .btn-transparent {
+          background: none;
+          border: none;
+          color: black;
+          font-size: 0.75rem;
+          padding: 0.25rem;
+          width: 20%;
+          text-decoration: none;
+          transition: background-color 0.3s, color 0.3s; /* Suaviza la transición */
+      }
+
+      .btn-transparent:hover {
+          background-color: #f3e6f8; /* Corregido el uso de important */
+          color: #c188cf; /* Corregido el uso de important */
+      }
+
+      .fa-lg {
+          font-size: 24px;
+          line-height: .05em;
+          vertical-align: 6px;
+          color: #c188cf;
+          transition: transform 0.3s ease; /* Agregado para la animación */
+      }
+
+      .fa-lg:active {
+          transform: scale(1.1); /* Escala el icono al hacer clic */
+      }
+
+      .container-fluid {
+          display: flex;
+          justify-content: space-around;
+      }
+
+      .scroll-container {
+          display: flex;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+
+      .scroll-container::-webkit-scrollbar {
+          display: none;
+      }
+
+      .card {
+          scroll-snap-align: start;
+          flex: 0 0 auto;
+          width: 346px;
+          margin-right: 15px;
+          background-color: #6c757d17;
+      }
+
+      .h1, h1 {
+          font-size: x-large;
+          color: #c387ce;
+      } 
+      
+      h2 {
+          font-size: 18px;
+          text-align: left;
+          margin-bottom: 1rem;
+      }
+
+      .video-container {
+          position: relative;
+          padding-bottom: 91.25%;
+          height: 70px;
+      }
+
+      .video-container img, .video-container iframe {
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
+
+      .video-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+      }
+
+      .card-link {
+          text-decoration: none;
+          color: inherit;
+          cursor: pointer;
+      }
+
+      .d-flex {
+          background-color: #fff;
+      }
+
+      .bg-light {
+          --bs-bg-opacity: 1;
+          background-color: #fff !important;
+      }
+
+      .separator {
+          border: none;
+          border-top: 1px solid #c5a9ce54;
+          margin-top: 77px;
+      }
+
+
+      
+    </style>
+  </head>
+  <body class="bg-white text-dark">
+    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-top">
+        <div class="container-fluid d-flex align-items-center">
+            <img src="Logotipo.png" alt="Acryl Nagels Logo" class="navbar-logo">
+            <span class="navbar-text"><h1>Acryl Nagels</h1></span>
+        </div>
+    </header>
+   
+    
+  
+    <div class="separator"></div>
+        <main class="container mt-3">
+          <h2>Preguntas frecuentes</h2>
+          <div class="scroll-container">
+            <div class="card bg-secondary mb-3">
+              <div class="video-container">
+                <!-- Thumbnail del video de YouTube como cover -->
+                <img src="https://img.youtube.com/vi/16KKdEH_s-4/0.jpg" alt="Cover" class="cover-image">
+                <div class="video-overlay" data-src="https://www.youtube.com/embed/16KKdEH_s-4?autoplay=1&controls=0&rel=0&showinfo=0&fs=0">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="card-body d-flex">
+                <img src="https://proof.builderall.com/user_data/icons/9oIFU6ZzftIXXgU.png" alt="Perfil" class="rounded-circle" style="width: 60px; height: 60px;">
+                <div class="ms-3">
+                  <p class="mb-0">Como elegir tu servicio de uñas.</p>
+                  <small>Acryl Nagels | Servicios</small>
+                </div>
+              </div>
+            </div>
+        
+        <!-- Repetir tarjetas según sea necesario -->
+             <div class="card bg-secondary mb-3">
+            <div class="video-container">
+                <!-- Thumbnail del video de YouTube como cover -->
+                <img src="https://img.youtube.com/vi/sIb19kkK1Hg/0.jpg" alt="Cover" class="cover-image">
+                <div class="video-overlay" data-src="https://www.youtube.com/embed/sIb19kkK1Hg?autoplay=1&controls=0&rel=0&showinfo=0&fs=0">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="card-body d-flex">
+                <img src="https://proof.builderall.com/user_data/icons/9oIFU6ZzftIXXgU.png" alt="Perfil" class="rounded-circle" style="width: 60px; height: 60px;">
+                <div class="ms-3">
+                  <p class="mb-0">Como elegir tu servicio de uñas.</p>
+                  <small>Acryl Nagels | Servicios</small>
+                </div>
+              </div>
+            </div>
+        
+        </div>
+      </div>
+       <div class="top-spacing"></div>
+      <h2>Uñas Acrílicas o Gel Semipermanente</h2>
+      <div class="scroll-container">
+        <div class="card">
+          <a href="RetiradoUñasAcrilicasNuevaAplicacion.html" class="card-link">
+            <div class="card-body d-flex">
+              <img src="https://proof.builderall.com/user_data/icons/9oIFU6ZzftIXXgU.png" alt="Perfil" class="rounded-circle" style="width: 60px; height: 60px;">
+              <div class="ms-3">
+                <p class="mb-0">
+                Retirado de uñas acrílicas, nueva aplicación de uñas.</p>
+                <small>1 Sesión | 4h 0m Duración </small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="UñasAcrilicasRellenoBaño.html" class="card-link">
+            <div class="card-body d-flex">
+              <img src="https://proof.builderall.com/user_data/icons/9oIFU6ZzftIXXgU.png" alt="Perfil" class="rounded-circle" style="width: 60px; height: 60px;">
+              <div class="ms-3">
+                <p class="mb-0">Uñas acrílicas relleno o baño de acrílico.
+</p>
+                <small>1 Sesión    |    3h 0m Duración    |</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="UñasAcrilicasRellenoBaño.html" class="card-link">
+            <div class="card-body d-flex">
+              <img src="https://proof.builderall.com/user_data/icons/9oIFU6ZzftIXXgU.png" alt="Perfil" class="rounded-circle" style="width: 60px; height: 60px;">
+              <div class="ms-3">
+                <p class="mb-0">Gel semipermanente o rubber base
+                  en uña natural.</p>
+                <small>1 Sesión | 2h 0m Duración </small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="ManicuraRusaCombinada.html" class="card-link">
+            <div class="card-body d-flex">
+              <img src="https://proof.builderall.com/user_data/icons/9oIFU6ZzftIXXgU.png" alt="Perfil" class="rounded-circle" style="width: 60px; height: 60px;">
+              <div class="ms-3">
+                <p class="mb-0">Manicura Rusa Combinada.</p>
+                <small>1 Sesión | 1h 0m Duración </small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Repetir tarjetas según sea necesario -->
+      </div>
+       <div class="top-spacing"></div>
+      <h2>Retirado de Gel o Acrílico</h2>
+      <div class="scroll-container">
+        <div class="card">
+          <a href="enlace-de-destino.html" class="card-link">
+            <div class="card-body d-flex">
+              <img src="https://proof.builderall.com/user_data/icons/9oIFU6ZzftIXXgU.png" alt="Perfil" class="rounded-circle" style="width: 60px; height: 60px;">
+              <div class="ms-3">
+                <p class="mb-0">
+                Retirado de uñas acrílicas y nueva aplicación de uñas acrílicas.</p>
+                <small>1 Sesión | 4h 0m Duración </small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="enlace-de-destino.html" class="card-link">
+            <div class="card-body d-flex">
+              <img src="https://proof.builderall.com/user_data/icons/9oIFU6ZzftIXXgU.png" alt="Perfil" class="rounded-circle" style="width: 60px; height: 60px;">
+              <div class="ms-3">
+                <p class="mb-0">Nunca pares de aprender.</p>
+                <small>29 cursos | Ruta Personalizada</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="enlace-de-destino.html" class="card-link">
+            <div class="card-body d-flex">
+              <img src="https://proof.builderall.com/user_data/icons/9oIFU6ZzftIXXgU.png" alt="Perfil" class="rounded-circle" style="width: 60px; height: 60px;">
+              <div class="ms-3">
+                <p class="mb-0">Nunca pares de aprender.</p>
+                <small>29 cursos | Ruta Personalizada</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Repetir tarjetas según sea necesario -->
+      </div>
+    </main>
+    <div class="top-spacing"></div>
+     <div class="top-spacing"></div>
+    <footer class="navbar fixed-bottom navbar-light bg-light">
+        <div class="container-fluid justify-content-around text-center" style="gap: 0px; margin-bottom: 17px;">
+            <button onclick="window.location.href='index.html'" class="btn btn-transparent">
+              <i class="fab fa-gratipay fa-lg"></i>
+                <br><span class="navbar-text">Inicio</span>
+            </button>
+            <button onclick="window.location.href='Calculadora.html'" class="btn btn-transparent">
+              <i class="fas fa-search fa-lg"></i>
+                <br><span class="navbar-text">Explorar</span>
+            </button>
+            <button onclick="window.location.href='Blog.html'" class="btn btn-transparent">
+              <i class="fas fa-rss fa-lg"></i>
+                <br><span class="navbar-text">Blog</span>
+            </button>
+            <button onclick="window.location.href='Chat.html'" class="btn btn-transparent">
+              <i class="fas fa-comment-alt fa-lg"></i>
+                <br><span class="navbar-text">Chat Acryl</span>
+            </button>
+            <button onclick="window.location.href='enlace-de-mi-perfil.html'" class="btn btn-transparent">
+              <i class="fas fa-shopping-bag fa-lg"></i>
+                <br><span class="navbar-text">Shop</span>
+            </button>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const videoOverlays = document.querySelectorAll('.video-overlay');
+        videoOverlays.forEach(overlay => {
+          overlay.addEventListener('click', function() {
+            const videoSrc = overlay.getAttribute('data-src');
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('src', videoSrc);
+            iframe.setAttribute('allow', 'autoplay; encrypted-media');
+            iframe.setAttribute('allowfullscreen', '');
+            overlay.parentNode.replaceChild(iframe, overlay);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

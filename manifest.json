@@ -1,0 +1,25 @@
+{
+  "name": "Platzo",
+  "short_name": "Platzo",
+  "description": "Descripción de tu aplicación",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://proof.builderall.com/user_data/icons/9oIFU6ZzftIXXgU.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://proof.builderall.com/user_data/icons/9oIFU6ZzftIXXgU.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_screen": {
+    "background_color": "#ffffff",
+    "z-index": 1
+  }
+}
